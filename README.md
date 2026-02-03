@@ -1,3 +1,35 @@
+MODULE 2 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+MODULE 1
+
 ANSWER 1 
 docker run -it --rm --entrypoint=bash python:3.13
 pip --version
