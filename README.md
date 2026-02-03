@@ -1,7 +1,23 @@
 MODULE 2 
+Q 1 128.3 MiB
+Q 2 green_tripdata_2020-04.csv
+Q 3 select count(*) from yellow_tripdata
+Q 4 select count(*) from green_tripdata
+Q 5 meganhendricks@MacBook-Air-3 KESTRA  % curl -L -o yellow_tripdata_2021-03.csv.gz \
+https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-03.csv.gz
 
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 33.5M  100 33.5M    0     0  3649k      0  0:00:09  0:00:09 --:--:-- 3775k
+meganhendricks@MacBook-Air-3 KESTRA  % gunzip yellow_tripdata_2021-03.csv.gz
 
+meganhendricks@MacBook-Air-3 KESTRA  % wc -l yellow_tripdata_2021-03.csv
 
+ 1925153 yellow_tripdata_2021-03.csv
+meganhendricks@MacBook-Air-3 KESTRA  % 
+Q 6 Add a timezone property set to America/New_York in the Schedule trigger configuration
+IANA
 
 
 
