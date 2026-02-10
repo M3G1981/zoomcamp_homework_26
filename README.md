@@ -7,10 +7,13 @@ FROM dtc-de-zoomcamp-040473.zoomcamp.yellow_taxi_native
 WHERE fare_amount = 0;
 Answer = 8333
 Q 5 Partition by tpep_dropoff_datetime and Cluster on VendorID
-Q 6
+Q 6 310.24 MB for non-partitioned table and 26.84 MB for the partitioned table
+SELECT DISTINCT VendorID 
+FROM `dtc-de-zoomcamp-040473.zoomcamp.yellow_taxi_partitioned`
+WHERE tpep_dropoff_datetime Between '2024-03-01' AND '2024-03-15'
 Q 7 GCP Bucket
 Q 8 False
-Q 9 
+Q 9 0bytes (we ran the query at the start of the homework and the results was cached 
 
 
 MODULE 2 
