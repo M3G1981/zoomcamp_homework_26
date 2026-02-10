@@ -1,3 +1,18 @@
+MODULE 3 HOMEWORK
+Q 1 20,332,093
+Q 2 0 MB for the External Table and 155.12 MB for the Materialized Table
+Q 3 BigQuery is a columnar database, and it only scans the specific columns requested in the query. Querying two columns (PULocationID, DOLocationID) requires reading more data than querying one column (PULocationID), leading to a higher estimated number of bytes processed.
+Q 4 SELECT COUNT(*)
+FROM dtc-de-zoomcamp-040473.zoomcamp.yellow_taxi_native
+WHERE fare_amount = 0;
+Answer = 8333
+Q 5 Partition by tpep_dropoff_datetime and Cluster on VendorID
+Q 6
+Q 7 GCP Bucket
+Q 8 False
+Q 9 
+
+
 MODULE 2 
 Q 1 128.3 MiB
 Q 2 green_tripdata_2020-04.csv
